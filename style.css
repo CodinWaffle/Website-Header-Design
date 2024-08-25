@@ -1,0 +1,168 @@
+:root {
+  --main-color: #d3ad7f;
+  --black: #2f2f2f;
+  --bg: #f4ffdd;
+  --border : .1rem solid rgba(255,255,255,.3);
+}
+
+body { 
+  background:  var(--bg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    text-transform: capatilize;
+    transition:.2s linear;
+    outline: none; 
+    border: none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+p{
+    top: 40%;
+    color: #ffffff;
+    position: fixed;
+   padding: 5px;
+   width: 500px;
+   height: 90px;
+   text-align: justify;
+   text-indent: 50px;
+
+}
+
+
+  
+.example1 {
+    position: center;
+    background-color: black;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding:  30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    margin-top: 95px;
+    border-radius: 20px;
+    
+
+}
+
+.example2 {
+   position: center;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 30px 100px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   z-index: 100;
+   margin-top: 95px;
+}
+
+.example3 {
+background: var(--black);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding:1.5rem 7%;
+border-bottom: var (--border);
+position: center;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+margin-top: 95px;
+border-radius: 30px;
+}
+
+.logo1 {
+  font-size: 1cm;
+  color: #ffffff;
+  pointer-events: none;
+  margin-right: 270px;
+  margin-left: 50px;
+}
+
+.logo2 {
+  font-size: 60px;
+  color: #359391;
+  pointer-events: none;
+  margin-right: 270px;
+}
+.logo3 { 
+  font-size: 60px;
+  color: #ffffff;
+  pointer-events: none;
+  margin-right: 270px;
+ 
+}
+
+
+.navbar1 a {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 40px;
+   font-weight: 500;
+   font-size: 18px;
+}
+
+
+a::before {
+    content: '';
+    background: rgb(255, 255, 255);
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: .6s;
+   
+}
+
+  a:hover::before {
+  width: 100%;
+ 
+}
+
+.navbar2 a {
+  text-decoration: none;
+  color: #359391;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.navbar2 a:hover,
+.navbar2 a.Active {
+  background: #359391;
+  color: white;
+}
+
+.navbar3 a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color:white;
+  text-decoration: none;
+}
+
+.navbar3 a:hover{
+  color:var(--main-color);
+  border-bottom: .1rem solid var(--main-color);
+  padding-bottom: .5rem;
+}
+
+
+
